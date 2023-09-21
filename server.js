@@ -1,9 +1,10 @@
 const express = require("express");
+const os = require('os');
 const app = express();
 const port =8000;
 
 app.get("/",(req,res)=>{
-    res.send("hellow");
+    res.send(os.platform());
 })
 
 app.listen(port,()=>{
