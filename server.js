@@ -4,7 +4,7 @@ const app = express();
 const port =8000;
 
 app.get("/",(req,res)=>{
-    res.send(os.platform());
+    res.send(os.cpus());
 })
 
 app.listen(port,()=>{
